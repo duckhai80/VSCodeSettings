@@ -1,0 +1,885 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  outline: none !important;
+}
+
+.windows {
+  font-family: "Roboto", sans-serif;
+}
+
+*:focus-visible {
+  outline: transparent auto 0px;
+  outline-color: -webkit-focus-ring-color;
+  outline-width: 0px;
+}
+
+.monaco-scrollable-element {
+  outline-color: transparent;
+}
+
+.monaco-workbench
+  .part.editor
+  > .content
+  .editor-group-container
+  > .title
+  .tabs-container
+  > .tab.sizing-fit.active {
+  --tab-border-bottom-color: transparent !important;
+}
+
+.monaco-workbench
+  .part.editor
+  > .content
+  .editor-group-container
+  > .title
+  .tabs-container
+  > .tab.sizing-fit.active::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-size: 400% 400%;
+  background-image: linear-gradient(
+    45deg,
+    /* #f05252,
+    #fc6c8f,
+    #ffb86c,
+    #ffcc70,
+    #20e3b2,
+    #2cccff,
+    #4158d0,
+    #c850c0 */
+      rgb(255, 40, 40),
+    rgb(255, 75, 40),
+    rgb(255, 111, 40),
+    rgb(255, 147, 40),
+    rgb(252, 181, 40),
+    rgb(255, 219, 40),
+    rgb(255, 255, 40),
+    rgb(219, 255, 40),
+    rgb(183, 255, 40),
+    rgb(147, 255, 40),
+    rgb(111, 255, 40),
+    rgb(75, 255, 40),
+    rgb(40, 255, 40),
+    rgb(40, 255, 75),
+    rgb(40, 255, 111),
+    rgb(40, 255, 147),
+    rgb(40, 255, 183),
+    rgb(40, 255, 219),
+    rgb(40, 255, 255),
+    rgb(40, 219, 255),
+    rgb(40, 183, 255),
+    rgb(40, 147, 255),
+    rgb(40, 111, 255),
+    rgb(40, 75, 255),
+    rgb(40, 40, 255),
+    rgb(75, 40, 255),
+    rgb(111, 40, 255),
+    rgb(147, 40, 255),
+    rgb(183, 40, 255),
+    rgb(219, 40, 255),
+    rgb(255, 40, 255),
+    rgb(255, 40, 219),
+    rgb(255, 40, 183),
+    rgb(255, 40, 147),
+    rgb(255, 40, 111),
+    rgb(255, 40, 43)
+  );
+  animation: gradient 5s ease alternate infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.monaco-list.list_id_1 .monaco-list-row.selected {
+  background-color: rgba(255, 255, 255, 0.07);
+  border: 1px solid transparent;
+  -moz-border-image: -moz-linear-gradient(
+    left,
+    /* #f05252 0%,
+    #fc6c8f,
+    #ffb86c,
+    #ffcc70,
+    #20e3b2,
+    #2cccff,
+    #4158d0,
+    #c850c0 100% */
+      rgb(255, 40, 40) 0%,
+    rgb(255, 75, 40),
+    rgb(255, 111, 40),
+    rgb(255, 147, 40),
+    rgb(252, 181, 40),
+    rgb(255, 219, 40),
+    rgb(255, 255, 40),
+    rgb(219, 255, 40),
+    rgb(183, 255, 40),
+    rgb(147, 255, 40),
+    rgb(111, 255, 40),
+    rgb(75, 255, 40),
+    rgb(40, 255, 40),
+    rgb(40, 255, 75),
+    rgb(40, 255, 111),
+    rgb(40, 255, 147),
+    rgb(40, 255, 183),
+    rgb(40, 255, 219),
+    rgb(40, 255, 255),
+    rgb(40, 219, 255),
+    rgb(40, 183, 255),
+    rgb(40, 147, 255),
+    rgb(40, 111, 255),
+    rgb(40, 75, 255),
+    rgb(40, 40, 255),
+    rgb(75, 40, 255),
+    rgb(111, 40, 255),
+    rgb(147, 40, 255),
+    rgb(183, 40, 255),
+    rgb(219, 40, 255),
+    rgb(255, 40, 255),
+    rgb(255, 40, 219),
+    rgb(255, 40, 183),
+    rgb(255, 40, 147),
+    rgb(255, 40, 111),
+    rgb(255, 40, 43) 100%
+  );
+  -webkit-border-image: -webkit-linear-gradient(
+    left,
+    /* #f05252 0%,
+    #fc6c8f,
+    #ffb86c,
+    #ffcc70,
+    #20e3b2,
+    #2cccff,
+    #4158d0,
+    #c850c0 100% */
+      rgb(255, 40, 40) 0%,
+    rgb(255, 75, 40),
+    rgb(255, 111, 40),
+    rgb(255, 147, 40),
+    rgb(252, 181, 40),
+    rgb(255, 219, 40),
+    rgb(255, 255, 40),
+    rgb(219, 255, 40),
+    rgb(183, 255, 40),
+    rgb(147, 255, 40),
+    rgb(111, 255, 40),
+    rgb(75, 255, 40),
+    rgb(40, 255, 40),
+    rgb(40, 255, 75),
+    rgb(40, 255, 111),
+    rgb(40, 255, 147),
+    rgb(40, 255, 183),
+    rgb(40, 255, 219),
+    rgb(40, 255, 255),
+    rgb(40, 219, 255),
+    rgb(40, 183, 255),
+    rgb(40, 147, 255),
+    rgb(40, 111, 255),
+    rgb(40, 75, 255),
+    rgb(40, 40, 255),
+    rgb(75, 40, 255),
+    rgb(111, 40, 255),
+    rgb(147, 40, 255),
+    rgb(183, 40, 255),
+    rgb(219, 40, 255),
+    rgb(255, 40, 255),
+    rgb(255, 40, 219),
+    rgb(255, 40, 183),
+    rgb(255, 40, 147),
+    rgb(255, 40, 111),
+    rgb(255, 40, 43) 100%
+  );
+  border-image: linear-gradient(
+    to right,
+    /* #f05252 0%,
+    #fc6c8f,
+    #ffb86c,
+    #ffcc70,
+    #20e3b2,
+    #2cccff,
+    #4158d0,
+    #c850c0 100% */
+      rgb(255, 40, 40) 0%,
+    rgb(255, 75, 40),
+    rgb(255, 111, 40),
+    rgb(255, 147, 40),
+    rgb(252, 181, 40),
+    rgb(255, 219, 40),
+    rgb(255, 255, 40),
+    rgb(219, 255, 40),
+    rgb(183, 255, 40),
+    rgb(147, 255, 40),
+    rgb(111, 255, 40),
+    rgb(75, 255, 40),
+    rgb(40, 255, 40),
+    rgb(40, 255, 75),
+    rgb(40, 255, 111),
+    rgb(40, 255, 147),
+    rgb(40, 255, 183),
+    rgb(40, 255, 219),
+    rgb(40, 255, 255),
+    rgb(40, 219, 255),
+    rgb(40, 183, 255),
+    rgb(40, 147, 255),
+    rgb(40, 111, 255),
+    rgb(40, 75, 255),
+    rgb(40, 40, 255),
+    rgb(75, 40, 255),
+    rgb(111, 40, 255),
+    rgb(147, 40, 255),
+    rgb(183, 40, 255),
+    rgb(219, 40, 255),
+    rgb(255, 40, 255),
+    rgb(255, 40, 219),
+    rgb(255, 40, 183),
+    rgb(255, 40, 147),
+    rgb(255, 40, 111),
+    rgb(255, 40, 43) 100%
+  );
+  border-image-slice: 1;
+}
+
+.monaco-drag-image,
+.monaco-list:focus .monaco-list-row.focused {
+  outline: 0px solid transparent;
+  outline-offset: -1px;
+}
+
+.monaco-workbench [tabindex="-1"]:focus,
+.monaco-workbench [tabindex="0"]:focus,
+.monaco-workbench .synthetic-focus,
+.monaco-workbench select:focus,
+.monaco-workbench .monaco-list:not(.element-focused):focus:before,
+.monaco-workbench input[type="button"]:focus,
+.monaco-workbench input[type="text"]:focus,
+.monaco-workbench button:focus,
+.monaco-workbench textarea:focus,
+.monaco-workbench input[type="search"]:focus,
+.monaco-workbench input[type="checkbox"]:focus {
+  box-sizing: border-box;
+  background-clip: padding-box;
+  background-color: transparent;
+  outline-color: none;
+
+  border: 1px solid transparent;
+  -moz-border-image: -moz-linear-gradient(
+    left,
+    /* #f05252 0%,
+    #fc6c8f,
+    #ffb86c,
+    #ffcc70,
+    #20e3b2,
+    #2cccff,
+    #4158d0,
+    #c850c0 100% */
+      rgb(255, 40, 40) 0%,
+    rgb(255, 75, 40),
+    rgb(255, 111, 40),
+    rgb(255, 147, 40),
+    rgb(252, 181, 40),
+    rgb(255, 219, 40),
+    rgb(255, 255, 40),
+    rgb(219, 255, 40),
+    rgb(183, 255, 40),
+    rgb(147, 255, 40),
+    rgb(111, 255, 40),
+    rgb(75, 255, 40),
+    rgb(40, 255, 40),
+    rgb(40, 255, 75),
+    rgb(40, 255, 111),
+    rgb(40, 255, 147),
+    rgb(40, 255, 183),
+    rgb(40, 255, 219),
+    rgb(40, 255, 255),
+    rgb(40, 219, 255),
+    rgb(40, 183, 255),
+    rgb(40, 147, 255),
+    rgb(40, 111, 255),
+    rgb(40, 75, 255),
+    rgb(40, 40, 255),
+    rgb(75, 40, 255),
+    rgb(111, 40, 255),
+    rgb(147, 40, 255),
+    rgb(183, 40, 255),
+    rgb(219, 40, 255),
+    rgb(255, 40, 255),
+    rgb(255, 40, 219),
+    rgb(255, 40, 183),
+    rgb(255, 40, 147),
+    rgb(255, 40, 111),
+    rgb(255, 40, 43) 100%
+  );
+  -webkit-border-image: -webkit-linear-gradient(
+    left,
+    /* #f05252 0%,
+    #fc6c8f,
+    #ffb86c,
+    #ffcc70,
+    #20e3b2,
+    #2cccff,
+    #4158d0,
+    #c850c0 100% */
+      rgb(255, 40, 40) 0%,
+    rgb(255, 75, 40),
+    rgb(255, 111, 40),
+    rgb(255, 147, 40),
+    rgb(252, 181, 40),
+    rgb(255, 219, 40),
+    rgb(255, 255, 40),
+    rgb(219, 255, 40),
+    rgb(183, 255, 40),
+    rgb(147, 255, 40),
+    rgb(111, 255, 40),
+    rgb(75, 255, 40),
+    rgb(40, 255, 40),
+    rgb(40, 255, 75),
+    rgb(40, 255, 111),
+    rgb(40, 255, 147),
+    rgb(40, 255, 183),
+    rgb(40, 255, 219),
+    rgb(40, 255, 255),
+    rgb(40, 219, 255),
+    rgb(40, 183, 255),
+    rgb(40, 147, 255),
+    rgb(40, 111, 255),
+    rgb(40, 75, 255),
+    rgb(40, 40, 255),
+    rgb(75, 40, 255),
+    rgb(111, 40, 255),
+    rgb(147, 40, 255),
+    rgb(183, 40, 255),
+    rgb(219, 40, 255),
+    rgb(255, 40, 255),
+    rgb(255, 40, 219),
+    rgb(255, 40, 183),
+    rgb(255, 40, 147),
+    rgb(255, 40, 111),
+    rgb(255, 40, 43) 100%
+  );
+  border-image: linear-gradient(
+    to right,
+    /* #f05252 0%,
+    #fc6c8f,
+    #ffb86c,
+    #ffcc70,
+    #20e3b2,
+    #2cccff,
+    #4158d0,
+    #c850c0 100% */
+      rgb(255, 40, 40) 0%,
+    rgb(255, 75, 40),
+    rgb(255, 111, 40),
+    rgb(255, 147, 40),
+    rgb(252, 181, 40),
+    rgb(255, 219, 40),
+    rgb(255, 255, 40),
+    rgb(219, 255, 40),
+    rgb(183, 255, 40),
+    rgb(147, 255, 40),
+    rgb(111, 255, 40),
+    rgb(75, 255, 40),
+    rgb(40, 255, 40),
+    rgb(40, 255, 75),
+    rgb(40, 255, 111),
+    rgb(40, 255, 147),
+    rgb(40, 255, 183),
+    rgb(40, 255, 219),
+    rgb(40, 255, 255),
+    rgb(40, 219, 255),
+    rgb(40, 183, 255),
+    rgb(40, 147, 255),
+    rgb(40, 111, 255),
+    rgb(40, 75, 255),
+    rgb(40, 40, 255),
+    rgb(75, 40, 255),
+    rgb(111, 40, 255),
+    rgb(147, 40, 255),
+    rgb(183, 40, 255),
+    rgb(219, 40, 255),
+    rgb(255, 40, 255),
+    rgb(255, 40, 219),
+    rgb(255, 40, 183),
+    rgb(255, 40, 147),
+    rgb(255, 40, 111),
+    rgb(255, 40, 43) 100%
+  );
+  border-image-slice: 1;
+}
+
+.monaco-drag-image,
+.monaco-list.list_id_2:focus .monaco-list-row.focused {
+  box-sizing: border-box;
+  background-clip: padding-box;
+  background-color: transparent;
+  outline-color: none;
+
+  border: 1px solid transparent;
+  -moz-border-image: -moz-linear-gradient(
+    left,
+    /* #f05252 0%,
+    #fc6c8f,
+    #ffb86c,
+    #ffcc70,
+    #20e3b2,
+    #2cccff,
+    #4158d0,
+    #c850c0 100% */
+      rgb(255, 40, 40) 0%,
+    rgb(255, 75, 40),
+    rgb(255, 111, 40),
+    rgb(255, 147, 40),
+    rgb(252, 181, 40),
+    rgb(255, 219, 40),
+    rgb(255, 255, 40),
+    rgb(219, 255, 40),
+    rgb(183, 255, 40),
+    rgb(147, 255, 40),
+    rgb(111, 255, 40),
+    rgb(75, 255, 40),
+    rgb(40, 255, 40),
+    rgb(40, 255, 75),
+    rgb(40, 255, 111),
+    rgb(40, 255, 147),
+    rgb(40, 255, 183),
+    rgb(40, 255, 219),
+    rgb(40, 255, 255),
+    rgb(40, 219, 255),
+    rgb(40, 183, 255),
+    rgb(40, 147, 255),
+    rgb(40, 111, 255),
+    rgb(40, 75, 255),
+    rgb(40, 40, 255),
+    rgb(75, 40, 255),
+    rgb(111, 40, 255),
+    rgb(147, 40, 255),
+    rgb(183, 40, 255),
+    rgb(219, 40, 255),
+    rgb(255, 40, 255),
+    rgb(255, 40, 219),
+    rgb(255, 40, 183),
+    rgb(255, 40, 147),
+    rgb(255, 40, 111),
+    rgb(255, 40, 43) 100%
+  );
+  -webkit-border-image: -webkit-linear-gradient(
+    left,
+    /* #f05252 0%,
+    #fc6c8f,
+    #ffb86c,
+    #ffcc70,
+    #20e3b2,
+    #2cccff,
+    #4158d0,
+    #c850c0 100% */
+      rgb(255, 40, 40) 0%,
+    rgb(255, 75, 40),
+    rgb(255, 111, 40),
+    rgb(255, 147, 40),
+    rgb(252, 181, 40),
+    rgb(255, 219, 40),
+    rgb(255, 255, 40),
+    rgb(219, 255, 40),
+    rgb(183, 255, 40),
+    rgb(147, 255, 40),
+    rgb(111, 255, 40),
+    rgb(75, 255, 40),
+    rgb(40, 255, 40),
+    rgb(40, 255, 75),
+    rgb(40, 255, 111),
+    rgb(40, 255, 147),
+    rgb(40, 255, 183),
+    rgb(40, 255, 219),
+    rgb(40, 255, 255),
+    rgb(40, 219, 255),
+    rgb(40, 183, 255),
+    rgb(40, 147, 255),
+    rgb(40, 111, 255),
+    rgb(40, 75, 255),
+    rgb(40, 40, 255),
+    rgb(75, 40, 255),
+    rgb(111, 40, 255),
+    rgb(147, 40, 255),
+    rgb(183, 40, 255),
+    rgb(219, 40, 255),
+    rgb(255, 40, 255),
+    rgb(255, 40, 219),
+    rgb(255, 40, 183),
+    rgb(255, 40, 147),
+    rgb(255, 40, 111),
+    rgb(255, 40, 43) 100%
+  );
+  border-image: linear-gradient(
+    to right,
+    /* #f05252 0%,
+    #fc6c8f,
+    #ffb86c,
+    #ffcc70,
+    #20e3b2,
+    #2cccff,
+    #4158d0,
+    #c850c0 100% */
+      rgb(255, 40, 40) 0%,
+    rgb(255, 75, 40),
+    rgb(255, 111, 40),
+    rgb(255, 147, 40),
+    rgb(252, 181, 40),
+    rgb(255, 219, 40),
+    rgb(255, 255, 40),
+    rgb(219, 255, 40),
+    rgb(183, 255, 40),
+    rgb(147, 255, 40),
+    rgb(111, 255, 40),
+    rgb(75, 255, 40),
+    rgb(40, 255, 40),
+    rgb(40, 255, 75),
+    rgb(40, 255, 111),
+    rgb(40, 255, 147),
+    rgb(40, 255, 183),
+    rgb(40, 255, 219),
+    rgb(40, 255, 255),
+    rgb(40, 219, 255),
+    rgb(40, 183, 255),
+    rgb(40, 147, 255),
+    rgb(40, 111, 255),
+    rgb(40, 75, 255),
+    rgb(40, 40, 255),
+    rgb(75, 40, 255),
+    rgb(111, 40, 255),
+    rgb(147, 40, 255),
+    rgb(183, 40, 255),
+    rgb(219, 40, 255),
+    rgb(255, 40, 255),
+    rgb(255, 40, 219),
+    rgb(255, 40, 183),
+    rgb(255, 40, 147),
+    rgb(255, 40, 111),
+    rgb(255, 40, 43) 100%
+  );
+  border-image-slice: 1;
+}
+
+.monaco-list .monaco-list-row.selected {
+  border: 1px solid transparent;
+  -moz-border-image: -moz-linear-gradient(
+    left,
+    /* #f05252 0%,
+    #fc6c8f,
+    #ffb86c,
+    #ffcc70,
+    #20e3b2,
+    #2cccff,
+    #4158d0,
+    #c850c0 100% */
+      rgb(255, 40, 40) 0%,
+    rgb(255, 75, 40),
+    rgb(255, 111, 40),
+    rgb(255, 147, 40),
+    rgb(252, 181, 40),
+    rgb(255, 219, 40),
+    rgb(255, 255, 40),
+    rgb(219, 255, 40),
+    rgb(183, 255, 40),
+    rgb(147, 255, 40),
+    rgb(111, 255, 40),
+    rgb(75, 255, 40),
+    rgb(40, 255, 40),
+    rgb(40, 255, 75),
+    rgb(40, 255, 111),
+    rgb(40, 255, 147),
+    rgb(40, 255, 183),
+    rgb(40, 255, 219),
+    rgb(40, 255, 255),
+    rgb(40, 219, 255),
+    rgb(40, 183, 255),
+    rgb(40, 147, 255),
+    rgb(40, 111, 255),
+    rgb(40, 75, 255),
+    rgb(40, 40, 255),
+    rgb(75, 40, 255),
+    rgb(111, 40, 255),
+    rgb(147, 40, 255),
+    rgb(183, 40, 255),
+    rgb(219, 40, 255),
+    rgb(255, 40, 255),
+    rgb(255, 40, 219),
+    rgb(255, 40, 183),
+    rgb(255, 40, 147),
+    rgb(255, 40, 111),
+    rgb(255, 40, 43) 100%
+  );
+  -webkit-border-image: -webkit-linear-gradient(
+    left,
+    /* #f05252 0%,
+    #fc6c8f,
+    #ffb86c,
+    #ffcc70,
+    #20e3b2,
+    #2cccff,
+    #4158d0,
+    #c850c0 100% */
+      rgb(255, 40, 40) 0%,
+    rgb(255, 75, 40),
+    rgb(255, 111, 40),
+    rgb(255, 147, 40),
+    rgb(252, 181, 40),
+    rgb(255, 219, 40),
+    rgb(255, 255, 40),
+    rgb(219, 255, 40),
+    rgb(183, 255, 40),
+    rgb(147, 255, 40),
+    rgb(111, 255, 40),
+    rgb(75, 255, 40),
+    rgb(40, 255, 40),
+    rgb(40, 255, 75),
+    rgb(40, 255, 111),
+    rgb(40, 255, 147),
+    rgb(40, 255, 183),
+    rgb(40, 255, 219),
+    rgb(40, 255, 255),
+    rgb(40, 219, 255),
+    rgb(40, 183, 255),
+    rgb(40, 147, 255),
+    rgb(40, 111, 255),
+    rgb(40, 75, 255),
+    rgb(40, 40, 255),
+    rgb(75, 40, 255),
+    rgb(111, 40, 255),
+    rgb(147, 40, 255),
+    rgb(183, 40, 255),
+    rgb(219, 40, 255),
+    rgb(255, 40, 255),
+    rgb(255, 40, 219),
+    rgb(255, 40, 183),
+    rgb(255, 40, 147),
+    rgb(255, 40, 111),
+    rgb(255, 40, 43) 100%
+  );
+  border-image: linear-gradient(
+    to right,
+    /* #f05252 0%,
+    #fc6c8f,
+    #ffb86c,
+    #ffcc70,
+    #20e3b2,
+    #2cccff,
+    #4158d0,
+    #c850c0 100% */
+      rgb(255, 40, 40) 0%,
+    rgb(255, 75, 40),
+    rgb(255, 111, 40),
+    rgb(255, 147, 40),
+    rgb(252, 181, 40),
+    rgb(255, 219, 40),
+    rgb(255, 255, 40),
+    rgb(219, 255, 40),
+    rgb(183, 255, 40),
+    rgb(147, 255, 40),
+    rgb(111, 255, 40),
+    rgb(75, 255, 40),
+    rgb(40, 255, 40),
+    rgb(40, 255, 75),
+    rgb(40, 255, 111),
+    rgb(40, 255, 147),
+    rgb(40, 255, 183),
+    rgb(40, 255, 219),
+    rgb(40, 255, 255),
+    rgb(40, 219, 255),
+    rgb(40, 183, 255),
+    rgb(40, 147, 255),
+    rgb(40, 111, 255),
+    rgb(40, 75, 255),
+    rgb(40, 40, 255),
+    rgb(75, 40, 255),
+    rgb(111, 40, 255),
+    rgb(147, 40, 255),
+    rgb(183, 40, 255),
+    rgb(219, 40, 255),
+    rgb(255, 40, 255),
+    rgb(255, 40, 219),
+    rgb(255, 40, 183),
+    rgb(255, 40, 147),
+    rgb(255, 40, 111),
+    rgb(255, 40, 43) 100%
+  );
+  border-image-slice: 1;
+
+  background-color: rgba(255, 255, 255, 0.07);
+}
+
+.monaco-action-bar .action-item .codicon {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+}
+
+.monaco-workbench
+  .part.editor
+  > .content
+  .editor-group-container.active
+  > .title
+  .tabs-container
+  > .tab
+  > .tab-actions
+  .action-label.codicon {
+  color: inherit;
+  font-size: 16px;
+  padding: 2px;
+  width: fit-content;
+  height: fit-content;
+}
+
+.monaco-workbench
+  .activitybar
+  > .content
+  :not(.monaco-menu)
+  > .monaco-action-bar
+  .action-item.checked
+  .active-item-indicator:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 2px;
+  border: none;
+  background-size: 400% 400%;
+  background-image: linear-gradient(
+    180deg,
+    /* #f05252,
+    #fc6c8f,
+    #ffb86c,
+    #ffcc70,
+    #20e3b2,
+    #2cccff,
+    #4158d0,
+    #c850c0 */
+      rgb(255, 40, 40),
+    rgb(255, 75, 40),
+    rgb(255, 111, 40),
+    rgb(255, 147, 40),
+    rgb(252, 181, 40),
+    rgb(255, 219, 40),
+    rgb(255, 255, 40),
+    rgb(219, 255, 40),
+    rgb(183, 255, 40),
+    rgb(147, 255, 40),
+    rgb(111, 255, 40),
+    rgb(75, 255, 40),
+    rgb(40, 255, 40),
+    rgb(40, 255, 75),
+    rgb(40, 255, 111),
+    rgb(40, 255, 147),
+    rgb(40, 255, 183),
+    rgb(40, 255, 219),
+    rgb(40, 255, 255),
+    rgb(40, 219, 255),
+    rgb(40, 183, 255),
+    rgb(40, 147, 255),
+    rgb(40, 111, 255),
+    rgb(40, 75, 255),
+    rgb(40, 40, 255),
+    rgb(75, 40, 255),
+    rgb(111, 40, 255),
+    rgb(147, 40, 255),
+    rgb(183, 40, 255),
+    rgb(219, 40, 255),
+    rgb(255, 40, 255),
+    rgb(255, 40, 219),
+    rgb(255, 40, 183),
+    rgb(255, 40, 147),
+    rgb(255, 40, 111),
+    rgb(255, 40, 43)
+  );
+  animation: gradient2 5s ease alternate infinite;
+}
+
+@keyframes gradient2 {
+  0% {
+    background-position: 50% 0%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 50% 0%;
+  }
+}
+
+.monaco-workbench
+  .part.basepanel
+  > .title
+  > .panel-switcher-container
+  > .monaco-action-bar
+  .action-item.checked:not(:focus)
+  .active-item-indicator:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  border: none;
+  background-size: 400% 400%;
+  background-image: linear-gradient(
+    45deg,
+    /* #f05252,
+    #fc6c8f,
+    #ffb86c,
+    #ffcc70,
+    #20e3b2,
+    #2cccff,
+    #4158d0,
+    #c850c0 */
+      rgb(255, 40, 40),
+    rgb(255, 75, 40),
+    rgb(255, 111, 40),
+    rgb(255, 147, 40),
+    rgb(252, 181, 40),
+    rgb(255, 219, 40),
+    rgb(255, 255, 40),
+    rgb(219, 255, 40),
+    rgb(183, 255, 40),
+    rgb(147, 255, 40),
+    rgb(111, 255, 40),
+    rgb(75, 255, 40),
+    rgb(40, 255, 40),
+    rgb(40, 255, 75),
+    rgb(40, 255, 111),
+    rgb(40, 255, 147),
+    rgb(40, 255, 183),
+    rgb(40, 255, 219),
+    rgb(40, 255, 255),
+    rgb(40, 219, 255),
+    rgb(40, 183, 255),
+    rgb(40, 147, 255),
+    rgb(40, 111, 255),
+    rgb(40, 75, 255),
+    rgb(40, 40, 255),
+    rgb(75, 40, 255),
+    rgb(111, 40, 255),
+    rgb(147, 40, 255),
+    rgb(183, 40, 255),
+    rgb(219, 40, 255),
+    rgb(255, 40, 255),
+    rgb(255, 40, 219),
+    rgb(255, 40, 183),
+    rgb(255, 40, 147),
+    rgb(255, 40, 111),
+    rgb(255, 40, 43)
+  );
+  animation: gradient 5s ease alternate infinite;
+}
