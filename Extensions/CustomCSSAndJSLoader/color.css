@@ -883,3 +883,14 @@
   );
   animation: gradient 5s ease alternate infinite;
 }
+
+span[class*="dyn-rule-"] {
+  margin-right: 2px;
+  width: 0px;
+  color: rgb(255 255 255 / 75%);
+  font-size: 11px;
+}
+
+.colorpicker-color-decoration {
+  width: 0.8em !important;
+}
