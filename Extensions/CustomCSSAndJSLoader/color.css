@@ -12,7 +12,7 @@
 /* editor */
 .monaco-editor,
 .monaco-editor * {
-  font-family: "Fira Ligatures NL Retina", "Roboto Mono", monospace;
+  font-family: "Fira Ligatures NL", "Roboto Mono", monospace;
 }
 
 /* sidebar + explorer + tabs */
